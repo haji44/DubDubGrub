@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2055CA6B27BD410300F15362 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055CA6A27BD410300F15362 /* LocationDetailView.swift */; };
+		2055CA6E27BD4E6F00F15362 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055CA6D27BD4E6F00F15362 /* Utility.swift */; };
 		208FB94827BBE18300A2571A /* DubDubGrubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208FB94727BBE18300A2571A /* DubDubGrubApp.swift */; };
 		208FB94C27BBE18400A2571A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 208FB94B27BBE18400A2571A /* Assets.xcassets */; };
 		208FB94F27BBE18400A2571A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 208FB94E27BBE18400A2571A /* Preview Assets.xcassets */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2055CA6A27BD410300F15362 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		2055CA6D27BD4E6F00F15362 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		208FB94427BBE18300A2571A /* DubDubGrub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DubDubGrub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		208FB94727BBE18300A2571A /* DubDubGrubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubDubGrubApp.swift; sourceTree = "<group>"; };
 		208FB94B27BBE18400A2571A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +87,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2055CA6827BD40D300F15362 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2055CA6927BD40DB00F15362 /* Screen */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2055CA6927BD40DB00F15362 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				208FB97827BBE2CD00A2571A /* AppTabView.swift */,
+				208FB97A27BBE40900A2571A /* LocationMapView.swift */,
+				208FB97C27BBE42B00A2571A /* LocationListView.swift */,
+				208FB97E27BBE44A00A2571A /* ProfileView.swift */,
+				2055CA6A27BD410300F15362 /* LocationDetailView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		2055CA6C27BD4E6000F15362 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				2055CA6D27BD4E6F00F15362 /* Utility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		208FB93B27BBE18300A2571A = {
 			isa = PBXGroup;
 			children = (
@@ -107,15 +139,13 @@
 		208FB94627BBE18300A2571A /* DubDubGrub */ = {
 			isa = PBXGroup;
 			children = (
+				2055CA6C27BD4E6000F15362 /* Utility */,
+				2055CA6827BD40D300F15362 /* Views */,
 				208FB97527BBE27500A2571A /* Extension */,
 				208FB97127BBE19F00A2571A /* DubDubGrub.entitlements */,
 				208FB94727BBE18300A2571A /* DubDubGrubApp.swift */,
 				208FB94B27BBE18400A2571A /* Assets.xcassets */,
 				208FB94D27BBE18400A2571A /* Preview Content */,
-				208FB97827BBE2CD00A2571A /* AppTabView.swift */,
-				208FB97A27BBE40900A2571A /* LocationMapView.swift */,
-				208FB97C27BBE42B00A2571A /* LocationListView.swift */,
-				208FB97E27BBE44A00A2571A /* ProfileView.swift */,
 			);
 			path = DubDubGrub;
 			sourceTree = "<group>";
@@ -294,6 +324,8 @@
 				208FB94827BBE18300A2571A /* DubDubGrubApp.swift in Sources */,
 				208FB97B27BBE40900A2571A /* LocationMapView.swift in Sources */,
 				208FB97D27BBE42B00A2571A /* LocationListView.swift in Sources */,
+				2055CA6B27BD410300F15362 /* LocationDetailView.swift in Sources */,
+				2055CA6E27BD4E6F00F15362 /* Utility.swift in Sources */,
 				208FB97927BBE2CD00A2571A /* AppTabView.swift in Sources */,
 				208FB97F27BBE44A00A2571A /* ProfileView.swift in Sources */,
 				208FB97727BBE29000A2571A /* Color+Ext.swift in Sources */,
