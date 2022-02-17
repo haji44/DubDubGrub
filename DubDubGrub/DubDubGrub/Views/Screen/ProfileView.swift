@@ -56,7 +56,17 @@ struct ProfileView: View {
             
             // MARK: CENTER
             HStack {
-                Text("Bio 10 char remoan")
+                Text("Bio ")
+                    .font(.callout)
+                    .foregroundColor(.gray)
+                +
+                Text("\(100 - bio.count) ")
+                    .bold()
+                    .font(.callout)
+                    .foregroundColor(bio.count <= 100 ? .brandPrimary : Color(.systemPink))
+                +
+                Text("char remoan")
+                    .font(.callout)
                     .foregroundColor(Color.gray)
                 Spacer()
                 
@@ -111,12 +121,12 @@ struct ProfileView_Previews: PreviewProvider {
 struct DGButton: View {
     var body: some View {
         ZStack {
-            Rectangle()
-                .frame(width: 270, height: 50)
-                .cornerRadius(10)
             Text("Save Profile")
                 .bold()
                 .foregroundColor(.white)
+                .frame(width: 280, height: 44)
+                .background(Color.brandPrimary)
+                .cornerRadius(10)
         }
     }
 }
