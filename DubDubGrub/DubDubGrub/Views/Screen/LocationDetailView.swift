@@ -11,31 +11,25 @@ struct LocationDetailView: View {
     // MARK: PROPERTY
     let columns: [GridItem] = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
     
+    var location: DDGLocation
+    
     // MARK: BODY
     var body: some View {
         VStack {
             // MARK: HEADER
             VStack {
-                Image("default-banner-asset")
-                    .resizable()
-                    .scaledToFit()
+                BannerImageView(imageName: "default-banner-asset")
                 
                 HStack {
-                    Label("123 Main Stree", systemImage: SystemName.mapPin.rawValue)
-                        .font(.caption)
-                        .foregroundColor(.secondary)
+                    StreetImageView(address: location.address)
                     Spacer()
                 }//HSTACK
                 .padding(.leading)
             }//: HEADER
             
-            Spacer()
+//            Spacer()
             
-            Text("testestestsetre tjhskjldk;j ;dlj;a;lk dkjlsa;jdfkaj;kjfkjkjkjkj;ja;lf")
-                .lineLimit(3)
-                .minimumScaleFactor(0.75)
-                .frame(height: 70)
-                .padding(.horizontal)
+            DescriptionView(text: location.description)
             
             // MARK: CENTER
             ZStack {
@@ -49,7 +43,7 @@ struct LocationDetailView: View {
                     } label: {
                         LocationActionButton(color: .brandPrimary, systemName: SystemName.location.rawValue)
                     }//:Button
-                    Link(destination: URL(string: "https://github.com/haji44")!) {
+                    Link(destination: URL(string: location.websiteURL)!) {
                         LocationActionButton(color: .brandPrimary, systemName: SystemName.network.rawValue)
                     }
                     Button {
@@ -68,7 +62,7 @@ struct LocationDetailView: View {
             Spacer()
             
             Text("Who's here?")
-                .font(.title)
+                .font(.title2)
                 .fontWeight(.heavy)
             
             // MARK: FOOTER
@@ -81,7 +75,7 @@ struct LocationDetailView: View {
                 }//: GRID
             }//: FOOTER
         }//: VSTACK
-        .navigationTitle("Location Name")
+        .navigationTitle(location.name)
         .navigationBarTitleDisplayMode(.inline)
     }//: BODY
 }
@@ -89,7 +83,7 @@ struct LocationDetailView: View {
 struct LocationDetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-        LocationDetailView()
+            LocationDetailView(location: DDGLocation(record: MockData.location))
         }
     }
 }
@@ -128,5 +122,40 @@ struct FirstNameAvatarView: View {
                 .lineLimit(1)
                 .minimumScaleFactor(0.75)
         }
+    }
+}
+
+struct BannerImageView: View {
+
+    var imageName: String
+    
+    var body: some View {
+        Image(imageName)
+            .resizable()
+            .scaledToFit()
+    }
+}
+
+struct StreetImageView: View {
+    
+    var address: String
+    
+    var body: some View {
+        Label(address, systemImage: SystemName.mapPin.rawValue)
+            .font(.caption)
+            .foregroundColor(.secondary)
+    }
+}
+
+struct DescriptionView: View {
+    
+    var text: String
+    
+    var body: some View {
+        Text(text)
+            .lineLimit(3)
+            .minimumScaleFactor(0.75)
+            .frame(height: 70)
+            .padding(.horizontal, 3)
     }
 }

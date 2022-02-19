@@ -19,32 +19,20 @@ struct ProfileView: View {
         VStack {
             // MARK: TOP
             ZStack {
-                Color(uiColor: .secondarySystemBackground)
-                    .frame(height: 130)
-                    .cornerRadius(12)
-                    .padding(.horizontal)
+                NameBackGroundView()
                 
                 HStack {
                     ZStack {
                         AvatorView(size: 90)
-                        Image(systemName: SystemName.pencil.rawValue)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 14, height: 14)
-                            .foregroundColor(.white)
-                            .offset(y: 32)
+                        EditImage()
                     }//: ZSTACK
                     .padding(.leading, 12)
                     
                     VStack {
                         TextField("First Name", text: $firstName)
-                            .font(.system(size: 32, weight: .bold))
-                            .lineLimit(1)
-                            .minimumScaleFactor(0.75)
+                            .profileNameStyle()
                         TextField("Last Name", text: $lastName)
-                            .font(.system(size: 32, weight: .bold))
-                            .lineLimit(1)
-                            .minimumScaleFactor(0.75)
+                            .profileNameStyle()
                         TextField("Last Name", text: $companyName)
                     }//: VSTACK
                     .padding(.trailing, 16) // constrain the right space of screen
@@ -56,18 +44,7 @@ struct ProfileView: View {
             
             // MARK: CENTER
             HStack {
-                Text("Bio ")
-                    .font(.callout)
-                    .foregroundColor(.gray)
-                +
-                Text("\(100 - bio.count) ")
-                    .bold()
-                    .font(.callout)
-                    .foregroundColor(bio.count <= 100 ? .brandPrimary : Color(.systemPink))
-                +
-                Text("char remoan")
-                    .font(.callout)
-                    .foregroundColor(Color.gray)
+                CharacterRemainView(currentCount: 3)
                 Spacer()
                 
                 ZStack {
@@ -91,20 +68,15 @@ struct ProfileView: View {
             }
             .padding(.horizontal)
             
-                
-
-            
             Spacer()
             
             // MARK: BUTTON
             Button {
                 
             } label: {
-                DGButton()
+                DGButton(tilte: "Save Profile")
             }
             .padding(.bottom)
-            
-            
         }//: VSSTACK
         .navigationTitle("Profile")
     }
@@ -118,15 +90,43 @@ struct ProfileView_Previews: PreviewProvider {
     }
 }
 
-struct DGButton: View {
+// MARK: SMALL VIEW
+struct NameBackGroundView: View {
     var body: some View {
-        ZStack {
-            Text("Save Profile")
-                .bold()
-                .foregroundColor(.white)
-                .frame(width: 280, height: 44)
-                .background(Color.brandPrimary)
-                .cornerRadius(10)
-        }
+        Color(uiColor: .secondarySystemBackground)
+            .frame(height: 130)
+            .cornerRadius(12)
+            .padding(.horizontal)
+    }
+}
+
+struct EditImage: View {
+    var body: some View {
+        Image(systemName: SystemName.pencil.rawValue)
+            .resizable()
+            .scaledToFit()
+            .frame(width: 14, height: 14)
+            .foregroundColor(.white)
+            .offset(y: 32)
+    }
+}
+
+struct CharacterRemainView: View {
+    
+    var currentCount: Int
+    
+    var body: some View {
+        Text("Bio ")
+            .font(.callout)
+            .foregroundColor(.gray)
+        +
+        Text("\(100 - currentCount) ")
+            .bold()
+            .font(.callout)
+            .foregroundColor(currentCount <= 100 ? .brandPrimary : Color(.systemPink))
+        +
+        Text("char remoan")
+            .font(.callout)
+            .foregroundColor(Color.gray)
     }
 }

@@ -22,16 +22,23 @@ struct LocationMapView: View {
                 .ignoresSafeArea()
             VStack {
                 HStack {
-                    Image("ddg-map-logo")
-                        .resizable()
-                        .scaledToFit()
-                    .frame(height: 100)
+                    LogoView().shadow(radius: 10)
                     Spacer()
                 } //: HSTACK
                 Spacer()
             }//: VSTACK
         }// ZSTACK
-    }
+        .onAppear {
+            CloudManager.getLocation { result in
+                switch result {
+                case .success(let locaitons):
+                    print(locaitons)
+                case .failure(let error):
+                    print(error)
+                }
+            }
+        }
+    }//: BODY
 }
 
 struct LocationMapView_Previews: PreviewProvider {
@@ -39,3 +46,5 @@ struct LocationMapView_Previews: PreviewProvider {
         LocationMapView()
     }
 }
+
+
