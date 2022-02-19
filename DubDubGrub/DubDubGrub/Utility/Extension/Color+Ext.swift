@@ -9,5 +9,6 @@ import Foundation
 import SwiftUI
 
 extension Color {
-    static let brandPrimary = Color("barndPrimary")
+    static let brandPrimary = Color("brandPrimary")
+    static let brandSecondary = Color(.systemPink)
 }

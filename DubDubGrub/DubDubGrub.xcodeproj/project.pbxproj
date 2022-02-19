@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2054C69E27C0EB3200523712 /* DDGLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2054C69D27C0EB3200523712 /* DDGLocation.swift */; };
+		2054C6A027C0EF5100523712 /* DDGProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2054C69F27C0EF5100523712 /* DDGProfile.swift */; };
+		2054C6A227C0FA1A00523712 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2054C6A127C0FA1A00523712 /* MockData.swift */; };
+		2054C6A527C0FF5900523712 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2054C6A427C0FF5900523712 /* CloudKitManager.swift */; };
+		2054C6A727C1003E00523712 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2054C6A627C1003E00523712 /* Constant.swift */; };
+		2055CA6B27BD410300F15362 /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055CA6A27BD410300F15362 /* LocationDetailView.swift */; };
+		2055CA6E27BD4E6F00F15362 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055CA6D27BD4E6F00F15362 /* Utility.swift */; };
+		2055CA7227BE8A3700F15362 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055CA7127BE8A3700F15362 /* LocationCell.swift */; };
+		2055CA7527BE8A7F00F15362 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055CA7427BE8A7F00F15362 /* LogoView.swift */; };
+		2055CA7727BE8A9600F15362 /* AvatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055CA7627BE8A9600F15362 /* AvatorView.swift */; };
+		2055CA7A27BE8B2E00F15362 /* DGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055CA7927BE8B2E00F15362 /* DGButton.swift */; };
+		2055CA7D27BE966800F15362 /* Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055CA7C27BE966800F15362 /* Modifier.swift */; };
+		2055CA7F27BE969E00F15362 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2055CA7E27BE969E00F15362 /* View+Ext.swift */; };
 		208FB94827BBE18300A2571A /* DubDubGrubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208FB94727BBE18300A2571A /* DubDubGrubApp.swift */; };
 		208FB94C27BBE18400A2571A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 208FB94B27BBE18400A2571A /* Assets.xcassets */; };
 		208FB94F27BBE18400A2571A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 208FB94E27BBE18400A2571A /* Preview Assets.xcassets */; };
@@ -39,6 +52,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2054C69D27C0EB3200523712 /* DDGLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGLocation.swift; sourceTree = "<group>"; };
+		2054C69F27C0EF5100523712 /* DDGProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDGProfile.swift; sourceTree = "<group>"; };
+		2054C6A127C0FA1A00523712 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		2054C6A427C0FF5900523712 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
+		2054C6A627C1003E00523712 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		2055CA6A27BD410300F15362 /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		2055CA6D27BD4E6F00F15362 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		2055CA7127BE8A3700F15362 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		2055CA7427BE8A7F00F15362 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		2055CA7627BE8A9600F15362 /* AvatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatorView.swift; sourceTree = "<group>"; };
+		2055CA7927BE8B2E00F15362 /* DGButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DGButton.swift; sourceTree = "<group>"; };
+		2055CA7C27BE966800F15362 /* Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifier.swift; sourceTree = "<group>"; };
+		2055CA7E27BE969E00F15362 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		208FB94427BBE18300A2571A /* DubDubGrub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DubDubGrub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		208FB94727BBE18300A2571A /* DubDubGrubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubDubGrubApp.swift; sourceTree = "<group>"; };
 		208FB94B27BBE18400A2571A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +109,92 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2054C69C27C0EB2200523712 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2054C69D27C0EB3200523712 /* DDGLocation.swift */,
+				2054C69F27C0EF5100523712 /* DDGProfile.swift */,
+				2054C6A127C0FA1A00523712 /* MockData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2054C6A327C0FF4500523712 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2054C6A427C0FF5900523712 /* CloudKitManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		2055CA6827BD40D300F15362 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2055CA7B27BE965800F15362 /* Modifier */,
+				2055CA7827BE8B2000F15362 /* Button */,
+				2055CA7327BE8A6B00F15362 /* Image */,
+				2055CA7027BE8A2C00F15362 /* Cell */,
+				2055CA6927BD40DB00F15362 /* Screen */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2055CA6927BD40DB00F15362 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				208FB97827BBE2CD00A2571A /* AppTabView.swift */,
+				208FB97A27BBE40900A2571A /* LocationMapView.swift */,
+				208FB97C27BBE42B00A2571A /* LocationListView.swift */,
+				208FB97E27BBE44A00A2571A /* ProfileView.swift */,
+				2055CA6A27BD410300F15362 /* LocationDetailView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		2055CA6C27BD4E6000F15362 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				2054C6A327C0FF4500523712 /* Manager */,
+				208FB97527BBE27500A2571A /* Extension */,
+				2055CA6D27BD4E6F00F15362 /* Utility.swift */,
+				2054C6A627C1003E00523712 /* Constant.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		2055CA7027BE8A2C00F15362 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2055CA7127BE8A3700F15362 /* LocationCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2055CA7327BE8A6B00F15362 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				2055CA7427BE8A7F00F15362 /* LogoView.swift */,
+				2055CA7627BE8A9600F15362 /* AvatorView.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		2055CA7827BE8B2000F15362 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				2055CA7927BE8B2E00F15362 /* DGButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		2055CA7B27BE965800F15362 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				2055CA7C27BE966800F15362 /* Modifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
 		208FB93B27BBE18300A2571A = {
 			isa = PBXGroup;
 			children = (
@@ -107,15 +219,13 @@
 		208FB94627BBE18300A2571A /* DubDubGrub */ = {
 			isa = PBXGroup;
 			children = (
-				208FB97527BBE27500A2571A /* Extension */,
+				2054C69C27C0EB2200523712 /* Model */,
+				2055CA6C27BD4E6000F15362 /* Utility */,
+				2055CA6827BD40D300F15362 /* Views */,
 				208FB97127BBE19F00A2571A /* DubDubGrub.entitlements */,
 				208FB94727BBE18300A2571A /* DubDubGrubApp.swift */,
 				208FB94B27BBE18400A2571A /* Assets.xcassets */,
 				208FB94D27BBE18400A2571A /* Preview Content */,
-				208FB97827BBE2CD00A2571A /* AppTabView.swift */,
-				208FB97A27BBE40900A2571A /* LocationMapView.swift */,
-				208FB97C27BBE42B00A2571A /* LocationListView.swift */,
-				208FB97E27BBE44A00A2571A /* ProfileView.swift */,
 			);
 			path = DubDubGrub;
 			sourceTree = "<group>";
@@ -157,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				208FB97627BBE29000A2571A /* Color+Ext.swift */,
+				2055CA7E27BE969E00F15362 /* View+Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -291,10 +402,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2055CA7F27BE969E00F15362 /* View+Ext.swift in Sources */,
+				2055CA7A27BE8B2E00F15362 /* DGButton.swift in Sources */,
 				208FB94827BBE18300A2571A /* DubDubGrubApp.swift in Sources */,
+				2054C6A227C0FA1A00523712 /* MockData.swift in Sources */,
 				208FB97B27BBE40900A2571A /* LocationMapView.swift in Sources */,
+				2054C69E27C0EB3200523712 /* DDGLocation.swift in Sources */,
 				208FB97D27BBE42B00A2571A /* LocationListView.swift in Sources */,
+				2055CA6B27BD410300F15362 /* LocationDetailView.swift in Sources */,
+				2054C6A727C1003E00523712 /* Constant.swift in Sources */,
+				2054C6A527C0FF5900523712 /* CloudKitManager.swift in Sources */,
+				2055CA7727BE8A9600F15362 /* AvatorView.swift in Sources */,
+				2055CA6E27BD4E6F00F15362 /* Utility.swift in Sources */,
+				2055CA7527BE8A7F00F15362 /* LogoView.swift in Sources */,
+				2055CA7D27BE966800F15362 /* Modifier.swift in Sources */,
+				2054C6A027C0EF5100523712 /* DDGProfile.swift in Sources */,
 				208FB97927BBE2CD00A2571A /* AppTabView.swift in Sources */,
+				2055CA7227BE8A3700F15362 /* LocationCell.swift in Sources */,
 				208FB97F27BBE44A00A2571A /* ProfileView.swift in Sources */,
 				208FB97727BBE29000A2571A /* Color+Ext.swift in Sources */,
 			);
